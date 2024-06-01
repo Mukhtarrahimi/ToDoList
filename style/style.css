@@ -114,3 +114,13 @@ ul li.checked {
 ul li.checked::before {
   background-image: url(../assets/img/complate.png);
 }
+
+.close{
+  position: absolute;
+  right: 30px;
+  width: 28px;
+  background-color: #ecececda;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
