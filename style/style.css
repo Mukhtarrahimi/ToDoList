@@ -31,8 +31,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 450px;
-  padding: 30px 30px 40px 30px;
+  width: 500px;
+  padding: 30px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
@@ -69,7 +69,7 @@ body {
 }
 .form input {
   width: 100%;
-  background-color: aliceblue;
+  background-color: rgb(247, 251, 255);
   padding: 0 10px;
   height: 100%;
   outline: none;
@@ -77,6 +77,7 @@ body {
   border: none;
   color: black;
   border: solid 1px #b4daf6;
+  font-size: 15px;
 }
 .form input:hover {
   background-color: rgb(229, 243, 255);
@@ -84,7 +85,6 @@ body {
 
 ul {
   margin-top: 20px;
-
 }
 ul li {
   list-style: none;
@@ -115,7 +115,7 @@ ul li.checked::before {
   background-image: url(../assets/img/complate.png);
 }
 
-.close{
+.close {
   position: absolute;
   right: 30px;
   width: 28px;
@@ -123,4 +123,33 @@ ul li.checked::before {
   padding: 8px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+  .form {
+    height: 40px;
+  }
+  .form button {
+    border-radius: 5px;
+  }
+
+  .form button img {
+    width: 15px;
+  }
+  .form input {
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  ul li::before {
+    width: 15px;
+    height: 15px;
+  }
+
+  .close {
+    width: 23px;
+    padding: 5px;
+  }
 }
